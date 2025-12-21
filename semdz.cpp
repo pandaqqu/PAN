@@ -231,7 +231,7 @@ public:
     }
     // Расчет градиента коэффициента подъема
     double grad_Cy_alpha() const{
-        double b = 39.6; // размах крыла
+        double b = 50.5; // размах крыла
         double AR = b*b/IL76_WING_AREA;
         return ((2 * PI * AR) / (2 + pow(4+AR*AR, 0.5))) * PI/180; // перевод в градусы так как угол атаки задаю в градусах
     }
