@@ -12,7 +12,7 @@ using namespace std;
 
 const double IL76_MASS = 155000.0;          // Масса самолета, кг
 const double IL76_WING_AREA = 300.0;       // Площадь крыла, м²
-const double IL76_NOMINAL_THRUST = 4 * 114660.0; // Суммарная тяга, Н
+const double IL76_NOMINAL_THRUST = 4 * 93100.0; // Суммарная тяга, Н
 const double IL76_CY0 = 0.25;               // Коэффициент подъемной силы при нулевом угле атаки
 const double MAX_THRUST_PERCENT = 0.9;     // Реалистичный процент тяги
 const double INITIAL_ALTITUDE = 400.0;      // Начальная высота, м
@@ -213,7 +213,7 @@ public:
         : wing_area(wing), initial_mass(m), env(), mass(m) {
 
         thrust = IL76_NOMINAL_THRUST * MAX_THRUST_PERCENT;
-        fuel_flow = 0.69; // кг/с - при крейсерском движении
+        fuel_flow = 1.1; // кг/с - при крейсерском движении
         Cx0 = 0.0275;
         K = 0.05;
         Cy_max = 1.1;
